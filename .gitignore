@@ -5,10 +5,20 @@ __pycache__/
 
 # PyTorch and other Model Weights (Large files)
 *.pt
+*.onnx
 *.pth
 *.safetensors
 *.bin
-saved_models/
+
+# saved_models/MiniLM_data10/
+saved_models/MiniLM_data10/best_model_epoch_014/
+saved_models/MiniLM_data10/best_model_epoch_015/
+saved_models/MiniLM_data10/best_model_epoch_016/
+saved_models/MiniLM_data10/best_model_epoch_017/
+saved_models/MiniLM_data10/best_model_epoch_018/
+saved_models/MiniLM_data10/best_model_epoch_019/
+saved_models/MiniLM_data10/final_test_evaluation_epoch_15/
+saved_models/MiniLM_data10/final_results_epoch_15.json
 
 # Datasets and large outputs
 *.csv
