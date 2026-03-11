@@ -1,0 +1,38 @@
+{
+  "model_info": {
+    "architecture": "MiniLM v3 Base + LoRA",
+    "base_model": "microsoft/MiniLM-L12-H384-uncased",
+    "model_file": "model_quant_8bit.onnx",
+    "quantization": "QUInt8",
+    "model_size_mb": 32.53
+  },
+  "inference": {
+    "max_length": 192,
+    "num_classes": 2,
+    "threshold": 0.59,
+    "label_map": {
+      "0": "benign",
+      "1": "phishing"
+    },
+    "input_names": ["input_ids", "attention_mask"],
+    "output_name": "logits"
+  },
+  "tokenizer": {
+    "type": "BertWordPiece",
+    "vocab_file": "vocab.txt",
+    "do_lower_case": true,
+    "vocab_size": 30522,
+    "special_tokens": {
+      "pad": {"id": 0, "token": "[PAD]"},
+      "unk": {"id": 100, "token": "[UNK]"},
+      "cls": {"id": 101, "token": "[CLS]"},
+      "sep": {"id": 102, "token": "[SEP]"}
+    }
+  },
+  "source": {
+    "training_script": "MiniLM_V2_inference.py",
+    "best_epoch": 18,
+    "optimal_threshold_source": "final_results.json",
+    "generated_from": ["deployment_metadata.json", "final_results.json"]
+  }
+}

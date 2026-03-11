@@ -1,0 +1,35 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+# PyTorch Ecosystem (CPU-only)
+torch
+torchvision
+torchaudio
+torchinfo>=1.8.0
+
+# HuggingFace & ONNX
+transformers>=4.38.0
+peft>=0.11.0
+optimum>=1.19.0
+onnx>=1.15.0
+onnxruntime>=1.17.0
+
+# Data Processing & ML
+pandas>=1.5.0
+numpy>=1.23,<3
+scikit-learn>=1.0.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Utilities
+tqdm>=4.65.0
+requests>=2.31.0
+packaging
+python-dateutil>=2.8.0
+
+# ----------> install 
+# matplotlib
+# seaborn
+# pydantic
+# torchinfo

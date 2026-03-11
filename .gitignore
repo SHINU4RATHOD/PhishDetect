@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyTorch and other Model Weights (Large files)
+*.pt
+*.pth
+*.safetensors
+*.bin
+saved_models/
+
+# Datasets and large outputs
+*.csv
+*.tsv
+*.jsonl
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Android Build & Config (inside Model_Deployment/PhishGuard)
+.gradle/
+build/
+app/build/
+.kotlin/
+local.properties
+*.iml
+
+# Virtual Environments
+venv/
+env/
+.env
+
+# Other project specific large dirs
+checkpoints/
